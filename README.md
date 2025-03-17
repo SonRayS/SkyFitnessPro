@@ -19,7 +19,7 @@ npm install
 Program Specifications (Google Sheets)
 Figma Design Mockups
 
-##Technologies Used
+## Technologies Used
 Vite: Application bootstrapped using the Vite template.
 TypeScript: Used for static typing and enhancing code quality.
 Tailwind CSS: For styling, with custom configurations inside tailwind.config.js.
@@ -30,7 +30,7 @@ useState: For handling local state in various components.
 Jest: For testing functions and components.
 Eslint and Prettier: For code formatting and linting.
 
-##Pages
+## Pages
 Home Page
 Contains:
 
@@ -58,7 +58,7 @@ Video player (YouTube)
 Exercise progress block
 
 
-##Functionality
+## Functionality
 Non-logged-in users: Have access only to the home and course pages. Dynamic elements requiring authentication are hidden.
 Login Modal: Clicking "Login" opens the login modal with data verification and password recovery (currently a placeholder).
 Registration Modal: Clicking "Register" opens the registration form with input validation and the ability to toggle between modals.
