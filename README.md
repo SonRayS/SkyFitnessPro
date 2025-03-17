@@ -1,1 +1,71 @@
- ```markdown # SkyFitnessPro ## Description SkyFitnessPro is a fitness app MVP that allows users to track their fitness journey. It provides course management, video tutorials, and progress tracking with a responsive design for both desktop (1440px) and mobile (375px) resolutions. ## Link to the Project [View the application on GitHub](https://github.com/SonRayS/JsKursWork.git) ## Setup To set up the application, run the following command: ```bash npm install ``` To run the app in the browser, use: ```bash npm run dev ``` ## Design Documents - [Program Specifications (Google Sheets)](https://docs.google.com/spreadsheets/d/1QJ3Hz_pqjVjb5naNAQx8Lja1aGayc0YoZgR0Pomp4CE/edit?hl=ru&gid=0#gid=0) - [Figma Design Mockups](https://www.figma.com/design/2Vhk2Zdii1eM7rA0fWQExv/SkyFitnessPro?node-id=44-2420&node-type=frame&t=WpqVNakGxQDxXymN-0) ## Technologies Used - **Vite**: App bootstrapped using the Vite template. - **TypeScript**: Provides static typing for better code quality. - **Tailwind CSS**: For styling with custom configurations inside `tailwind.config.js`. - **Google Firebase**: Used for user and course data management. - **React Router**: For routing between pages. - **useContext**: For managing global state (user data, courses, etc.). - **useState**: For local component state. - **Jest**: For testing components and functions. - **Eslint & Prettier**: For formatting and code quality. ## Pages ### 1. Home Page - General header - Motivational text and slogan - Course cards - "Back to top" button ### 2. Course Page - General header - Course name and image - 3 general course info points - Course directions - "Start your journey" block ### 3. Profile Page *(For logged-in users only)* - User block with data - "My Courses" block showing courses and progress ### 4. Workout Page *(For logged-in users only)* - YouTube video player - Exercise progress block ## Functionality ### User Access - **Non-logged-in users**: Have access to the home and course pages. Dynamic elements that require authentication are hidden. - **Logged-in users**: - Display name in the header (placeholder for actual functionality). - Clicking the name opens a modal with the real email and options to log out or go to the profile page. - Course cards display dynamically based on login state. - Password change functionality is available with validation. ### Course Management - Users can add courses to their profile, and the status of the course changes based on user login state (logged-in users can add, others see an alert to log in). - Courses can be removed from the profile page by clicking the minus button. - Progress tracking: Users enter progress data which is reflected as a percentage both in the profile and the course page. ### Authentication - **Login Modal**: For users to log in with data verification. - **Registration Modal**: Allows users to register with validation and switching between modals. - **Password Change**: Users can change their password with appropriate validation. ### Workout Progress - **Progress Tracking**: Users can enter progress for exercises, which is then calculated as a percentage and reflected in their profile. - **YouTube Integration**: Videos are embedded in the workout page. ## Setup Information - **Initial Estimated Time**: 70 hours - **Actual Time Spent**: 80 hours ## Future Improvements - Implement profile name functionality for logged-in users. - Improve password recovery and authentication. - Enhance user progress metrics and features. ``` ### Why this approach works: - **Centralized information**: All relevant info about the project is included in one place. - **Structured for ease**: Using clear headings and sections for setup, functionality, and technology used makes it easy to navigate. - **One file**: There's no need for multiple files or external documentation, making the project more streamlined. It's perfectly fine to keep everything in the `README.md` file, as it’s meant to be the main documentation file for the project!
+# SkyFitnessPro
+
+## Link to the Project
+
+[View the application on GitHub](https://github.com/SonRayS/JsKursWork.git)
+
+## Development Information
+
+SkyFitnessPro is a fitness application that offers users the ability to track progress in their fitness journey. It provides course management, video tutorials, and progress tracking, offering a responsive design for desktop and mobile resolutions (1440px and 375px). The app was developed using the Vite template and is powered by TypeScript, Tailwind CSS, and Google Firebase for user data and course management.
+
+## Setup
+
+To set up the application, run the following command:
+
+``bash
+npm install
+
+## Project Design Documents
+Program Specifications (Google Sheets)
+Figma Design Mockups
+
+##Technologies Used
+Vite: Application bootstrapped using the Vite template.
+TypeScript: Used for static typing and enhancing code quality.
+Tailwind CSS: For styling, with custom configurations inside tailwind.config.js.
+Google Firebase: Used for managing user data and course information.
+React Router: For page routing within the application.
+useContext: For managing global application state (user data, courses, and user courses).
+useState: For handling local state in various components.
+Jest: For testing functions and components.
+Eslint and Prettier: For code formatting and linting.
+
+##Pages
+Home Page
+Contains:
+
+General header
+Motivational text and slogan
+Course cards
+"Back to top" button
+Course Page
+Contains:
+
+General header
+Course name and image
+3 general points of course info
+Course directions
+"Start your journey" block
+Profile Page (Accessible only for logged-in users)
+Contains:
+
+User block with data
+"My Courses" block showing courses and progress
+Workout Page (Accessible only for logged-in users)
+Contains:
+
+Video player (YouTube)
+Exercise progress block
+
+
+##Functionality
+Non-logged-in users: Have access only to the home and course pages. Dynamic elements requiring authentication are hidden.
+Login Modal: Clicking "Login" opens the login modal with data verification and password recovery (currently a placeholder).
+Registration Modal: Clicking "Register" opens the registration form with input validation and the ability to toggle between modals.
+Logged-in users:
+Display the user's name in the header (placeholder functionality, as adding names was not specified).
+Clicking the name opens a modal showing the real user email, with options to log out or go to the profile page.
+Course cards update dynamically based on the user's login state (add course button for logged-in users, alert for non-logged-in users).
+In the profile, courses can be removed by clicking the minus button, which also updates the home page.
+Password change functionality: Users can update their password by entering the old and new password, with validation for the old password.
+Workout progress is tracked and displayed as a percentage, which is also reflected on the profile page.
